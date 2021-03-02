@@ -8,7 +8,7 @@ mBar::mBar()
 }
 
 
-void mBar::on_actionhelp_triggered()
+void mBar::help()
 {
 
     QMessageBox::about(this, tr("Game rules"),tr(
@@ -31,7 +31,7 @@ void mBar::on_actionhelp_triggered()
                        );
 }
 
-void mBar::on_action_about()
+void mBar::about()
 {
   QMessageBox::about(this, tr("Game rules"),tr(
   "<h2>Minesweeper v0.21b</h2>"
@@ -44,7 +44,7 @@ void mBar::on_action_about()
   ));
 }
 
-void mBar::on_actionabout_Qt_triggered()
+void mBar::about_Qt()
 {
      QMessageBox::aboutQt(this);
 }

@@ -10,9 +10,9 @@ public:
   mBar();
 
 public slots:
-  void on_actionhelp_triggered();
-  void on_action_about();
-  void on_actionabout_Qt_triggered();
+  void help();
+  void about();
+  void about_Qt();
 };
 
 #endif // MENUBAR_H

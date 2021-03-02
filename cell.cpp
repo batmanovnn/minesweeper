@@ -27,8 +27,7 @@ void Cell::mouseReleaseEvent(QMouseEvent *e) {
   if (e->button() == Qt::RightButton) emit clicked_right(r,c);
 }
 
-/*
-*/
+
 int Cell::getRow(){
   return row;
 }

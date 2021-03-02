@@ -23,9 +23,6 @@ public:
 
   void setState(int state);
   int  getState();
-  int  getRow();
-  int  getColumn();
-private:
 
 
 signals:
@@ -34,6 +31,8 @@ signals:
 
 protected:
   virtual void mouseReleaseEvent(QMouseEvent *e);
+  int  getRow();
+  int  getColumn();
 
 };
 

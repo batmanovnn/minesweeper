@@ -23,17 +23,17 @@ int main(int argc, char *argv[])
   //Help
   QAction *helpAct = new QAction(QObject::tr("&Help"), &w);
   QObject::connect(helpAct, &QAction::triggered,
-                  &m, &mBar::on_actionhelp_triggered);
+                  &m, &mBar::help);
   menuBar->addAction(helpAct);
   //about
   QAction *aboutAct = new QAction(QObject::tr("&about"), &w);
   QObject::connect(aboutAct, &QAction::triggered,
-                  &m, &mBar::on_action_about);
+                  &m, &mBar::about);
   menuBar->addAction(aboutAct);
   //about_Qt
   QAction *aboutQtAct = new QAction(QObject::tr("&about Qt"), &w);
   QObject::connect(aboutQtAct, &QAction::triggered,
-                  &m, &mBar::on_actionabout_Qt_triggered);
+                  &m, &mBar::about_Qt);
   menuBar->addAction(aboutQtAct);
 
   w.show();

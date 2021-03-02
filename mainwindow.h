@@ -6,11 +6,6 @@
 #include <QGridLayout>
 #include "cell.h"
 
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
 class MainWindow : public QMainWindow
 {
   Q_OBJECT
@@ -46,8 +41,6 @@ private slots:
   void clickedLeft(int row, int column);
   void clickedRight(int row, int column);
 
-private:
-  Ui::MainWindow *ui;
-
 };
+
 #endif // MAINWINDOW_H
