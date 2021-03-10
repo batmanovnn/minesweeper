@@ -14,15 +14,12 @@ MainWindow::MainWindow(QWidget *parent)
   : QMainWindow(parent)  
 {
   QWidget *widget = new QWidget();
-  QVBoxLayout *layout_v = new QVBoxLayout();
   QGridLayout *gameField = new QGridLayout();
 
   init(gameField);
   resetGame();
 
-  layout_v->addLayout(gameField);
-  widget->setLayout(layout_v);
-
+  widget->setLayout(gameField);
   setCentralWidget(widget);
 }
 

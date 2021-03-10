@@ -3,11 +3,11 @@
 
 #include <QWidget>
 
-class mBar : public QWidget
+class MenuBar : public QWidget
 {
   Q_OBJECT
 public:
-  mBar();
+  MenuBar();
 
 public slots:
   void help();

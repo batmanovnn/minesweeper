@@ -15,6 +15,7 @@ class Cell : public QPushButton
 
 public:
   Cell(int hazard, int state, int  row, int column, QWidget *parent = nullptr);
+
   void setMine();
   void incValue();      //Increase in the value of "hazard" for the cell
 
@@ -24,15 +25,14 @@ public:
   void setState(int state);
   int  getState();
 
+private:
+  virtual void mouseReleaseEvent(QMouseEvent *e);
+  int  getRow();
+  int  getColumn();
 
 signals:
   void clicked_left(int row, int column);
   void clicked_right(int row, int column);
-
-protected:
-  virtual void mouseReleaseEvent(QMouseEvent *e);
-  int  getRow();
-  int  getColumn();
 
 };
 

@@ -2,13 +2,9 @@
 
 #include <QMessageBox>
 
-mBar::mBar()
-{
+MenuBar::MenuBar(){}
 
-}
-
-
-void mBar::help()
+void MenuBar::help()
 {
 
     QMessageBox::about(this, tr("Game rules"),tr(
@@ -31,7 +27,7 @@ void mBar::help()
                        );
 }
 
-void mBar::about()
+void MenuBar::about()
 {
   QMessageBox::about(this, tr("Game rules"),tr(
   "<h2>Minesweeper v0.21b</h2>"
@@ -44,7 +40,7 @@ void mBar::about()
   ));
 }
 
-void mBar::about_Qt()
+void MenuBar::about_Qt()
 {
      QMessageBox::aboutQt(this);
 }

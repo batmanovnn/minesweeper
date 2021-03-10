@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
   MainWindow w;
-  mBar m;
+  MenuBar m;
   w.setWindowTitle("Minesweeper");
 
   QMenuBar *menuBar;            // Menu
@@ -23,17 +23,17 @@ int main(int argc, char *argv[])
   //Help
   QAction *helpAct = new QAction(QObject::tr("&Help"), &w);
   QObject::connect(helpAct, &QAction::triggered,
-                  &m, &mBar::help);
+                  &m, &MenuBar::help);
   menuBar->addAction(helpAct);
   //about
   QAction *aboutAct = new QAction(QObject::tr("&about"), &w);
   QObject::connect(aboutAct, &QAction::triggered,
-                  &m, &mBar::about);
+                  &m, &MenuBar::about);
   menuBar->addAction(aboutAct);
   //about_Qt
   QAction *aboutQtAct = new QAction(QObject::tr("&about Qt"), &w);
   QObject::connect(aboutQtAct, &QAction::triggered,
-                  &m, &mBar::about_Qt);
+                  &m, &MenuBar::about_Qt);
   menuBar->addAction(aboutQtAct);
 
   w.show();
